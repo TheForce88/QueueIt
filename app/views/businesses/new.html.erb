@@ -1,0 +1,21 @@
+<h1>New Business</h1>
+<%= form_with scope: :business, url: businesses_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :address %><br>
+    <%= form.text_field :address %>
+  </p>
+
+  <p>
+    <%= form.label :food_type %><br>
+    <%= form.text_field :food_type %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
